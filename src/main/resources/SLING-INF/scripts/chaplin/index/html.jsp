@@ -48,7 +48,7 @@
   });
 
   // Bootstrap the application
-  require(['chaplin'], function(Application) {
+  require(['application'], function(Application) {
     (new Application).initialize();
   });
   </script>
