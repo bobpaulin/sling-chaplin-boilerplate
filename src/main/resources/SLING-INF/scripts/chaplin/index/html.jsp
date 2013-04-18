@@ -12,7 +12,7 @@
   <meta charset="utf-8">
   <title>Chaplin Boilerplate Application</title>
   <style>body { font-family: sans-serif; }</style>
-  <!--<webresource:webresource groupName="chaplin"/>-->
+  <webresource:webresource groupName="chaplin" compileOnly="true"/>
   <script src="js/vendor/require-2.1.1.js"></script>
   <script>
   // Configure the AMD module loader
