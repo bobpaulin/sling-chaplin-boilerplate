@@ -8,7 +8,7 @@ http://chaplinjs.org/
 Apache Sling is a Restful framework built on top of JCR.
 http://sling.apache.org/
 
-REQUIRES sling-web-resource and sling-coffee project bundles to be installed to felix.
+REQUIRES [sling-web-resource](https://github.com/bobpaulin/sling-web-resource) and  [sling-coffee-core](https://github.com/bobpaulin/sling-coffee) project bundles to be installed to felix.
 
 # License
 
