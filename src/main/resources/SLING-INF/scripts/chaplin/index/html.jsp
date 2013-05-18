@@ -54,5 +54,7 @@
   });
   </script>
 </head>
-<body></body>
+<body>
+	<sling:include path="/content/chaplin/index/site"/>
+</body>
 </html>

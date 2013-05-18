@@ -2,5 +2,5 @@
 	"jcr:primaryType": "nt:folder",
 	"jcr:mixinTypes": ["webresource:WebResourceGroup"],
 	"webresource:name": "chaplin-templates",
-	"webresource:cachePath": "/content/chaplin/js"
+	"webresource:cachePath": "/content/chaplin/js/templates"
 }

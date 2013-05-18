@@ -1,6 +1,6 @@
 define [
   'views/base/view'
-  'templates/hello-world'
+  'templates/hello-world/hello-world'
 ], (View, template) ->
   'use strict'
 
