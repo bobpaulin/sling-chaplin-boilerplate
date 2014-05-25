@@ -1,15 +1,13 @@
 define [
   'views/base/view'
-  'templates/site/site'
+  'text!templates/site.hbs'
 ], (View, template) ->
   'use strict'
 
   class SiteView extends View
     container: 'body'
-    #Replace Server rendered
-    containerMethod: 'html'
     id: 'site-container'
     regions:
-      '#main-container': 'main'
+      main: '#main-container'
     template: template
     template = null

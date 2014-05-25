@@ -1,0 +1,9 @@
+{
+	"jcr:primaryType": "sling:Mapping",
+	"sling:match": "localhost.8080",
+	"sling:internalRedirect": "/content/chaplin",
+	"content":{
+		"jcr:primaryType": "sling:Mapping",
+		"sling:internalRedirect": "/content"
+	}
+}

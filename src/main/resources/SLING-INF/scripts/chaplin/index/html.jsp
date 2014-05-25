@@ -12,9 +12,7 @@
   <meta charset="utf-8">
   <title>Chaplin Boilerplate Application</title>
   <style>body { font-family: sans-serif; }</style>
-  <webresource:webresource groupName="chaplin" compileOnly="true"/>
-  <webresource:webresource groupName="chaplin-templates" compileOnly="true"/>
-  <script src="js/vendor/require-2.1.1.js"></script>
+  <script src="js/vendor/requirejs/require.js"></script>
   <script>
   // Configure the AMD module loader
   requirejs.config({
@@ -22,12 +20,12 @@
     baseUrl: './js/',
     // Specify the paths of vendor libraries
     paths: {
-      jquery: 'vendor/jquery-1.9.1',
-      underscore: 'vendor/underscore-1.4.3',
-      backbone: 'vendor/backbone-1.0.0',
-      handlebars: 'vendor/handlebars-1.0.rc.1',
-      text: 'vendor/require-text-2.0.3',
-      chaplin: 'vendor/chaplin-0.8.1'
+      jquery: 'vendor/jquery/jquery',
+      underscore: 'vendor/lodash/dist/lodash',
+      backbone: 'vendor/backbone/backbone',
+      handlebars: 'vendor/handlebars/handlebars',
+      text: 'vendor/requirejs-text/text',
+      chaplin: 'vendor/chaplin/chaplin'
     },
     // Underscore and Backbone are not AMD-capable per default,
     // so we need to use the AMD wrapping of RequireJS
@@ -49,12 +47,11 @@
   });
 
   // Bootstrap the application
-  require(['application'], function(Application) {
-    (new Application).initialize();
+  require(['application', 'routes'], function(Application, routes) {
+    new Application({routes: routes, controllerSuffix: '-controller',pushState: false, root: '/content/chaplin/'});
   });
   </script>
 </head>
 <body>
-	<sling:include path="/content/chaplin/index/site"/>
 </body>
 </html>

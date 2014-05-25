@@ -1,6 +1,6 @@
 define [
   'views/base/view'
-  'templates/hello-world/hello-world'
+  'text!templates/hello-world.hbs'
 ], (View, template) ->
   'use strict'
 
@@ -8,7 +8,6 @@ define [
     # Automatically render after initialize.
     autoRender: true
     className: 'hello-world'
-    region: 'main'
 
     # Save the template string in a prototype property.
     # This is overwritten with the compiled template function.
