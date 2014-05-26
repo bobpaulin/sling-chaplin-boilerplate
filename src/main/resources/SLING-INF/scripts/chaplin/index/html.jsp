@@ -48,7 +48,7 @@
 
   // Bootstrap the application
   require(['application', 'routes'], function(Application, routes) {
-    new Application({routes: routes, controllerSuffix: '-controller',pushState: false, root: '/content/chaplin/'});
+    new Application({routes: routes, controllerSuffix: '-controller',pushState: false, root: '/content/chaplin/index.html'});
   });
   </script>
 </head>
